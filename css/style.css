@@ -496,6 +496,7 @@ ol {
 	-o-transition: all 0.2s ease 0.2s;
 	transition: all 0.2s ease 0.2s;
 	opacity: 1;
+	font-size: 30px;
 }
 
 .hs-slider.owl-carousel .owl-item.active .hs-item .hi-text h1 {
@@ -505,6 +506,8 @@ ol {
 	-o-transition: all 0.4s ease 0.4s;
 	transition: all 0.4s ease 0.4s;
 	opacity: 1;
+	font-size: 50px;
+
 }
 
 .hs-slider.owl-carousel .owl-item.active .hs-item .hi-text .primary-btn {
@@ -761,119 +764,116 @@ ol {
 /*---------------------
   Pricing Section
 -----------------------*/
-
 .pricing-section {
-	background: #151515;
+    background: #151515;
+    padding: 50px 0;
 }
 
 .pricing-section .section-title {
-	margin-bottom: 56px;
+    margin-bottom: 56px;
+    text-align: center;
 }
 
 .ps-item {
-	text-align: center;
-	padding: 40px 30px 52px;
-	border: 1px solid #464646;
-	-webkit-transform: skewY(-4deg);
-	-ms-transform: skewY(-4deg);
-	transform: skewY(-4deg);
-	-webkit-transition: all 0.5s;
-	-o-transition: all 0.5s;
-	transition: all 0.5s;
-	margin-bottom: 30px;
-	position: relative;
+    text-align: center;
+    padding: 40px 30px 52px;
+    border: 1px solid #464646;
+    transform: skewY(-4deg);
+    transition: all 0.5s;
+    margin-bottom: 30px;
+    position: relative;
 }
 
 .ps-item:hover {
-	background: #30338e;
-	border-color: #ffffff;
+    background: #30338e;
+    border-color: #ffffff;
 }
 
 .ps-item:hover h3 {
-	color: #111111;
+    color: #111111;
 }
 
 .ps-item:hover .pi-price span {
-	color: #30338e;
+    color: #30338e;
 }
 
 .ps-item:hover ul li {
-	color: #111111;
-	font-weight: 600;
+    color: #111111;
+    font-weight: 600;
 }
 
 .ps-item:hover .primary-btn.pricing-btn {
-	background: #dd2830;
+    background: #dd2830;
 }
 
 .ps-item:hover .thumb-icon {
-	opacity: 1;
-	visibility: visible;
+    opacity: 1;
+    visibility: visible;
 }
 
 .ps-item h3 {
-	font-size: 28px;
-	color: #ffffff;
-	font-weight: 600;
-	margin-bottom: 16px;
-	-webkit-transform: skewY(4deg);
-	-ms-transform: skewY(4deg);
-	transform: skewY(4deg);
+    font-size: 28px;
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: 16px;
+    transform: skewY(4deg);
 }
 
 .ps-item .pi-price {
-	margin-bottom: 30px;
-	-webkit-transform: skewY(4deg);
-	-ms-transform: skewY(4deg);
-	transform: skewY(4deg);
+    margin-bottom: 30px;
+    transform: skewY(4deg);
 }
 
 .ps-item .pi-price h2 {
-	font-size: 60px;
-	color: #dd2830;
-	font-weight: 600;
+    font-size: 60px;
+    color: #dd2830;
+    font-weight: 600;
 }
 
 .ps-item .pi-price span {
-	color: #c4c4c4;
-	font-size: 16px;
-	font-weight: 700;
-	text-transform: uppercase;
+    color: #c4c4c4;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 .ps-item ul {
-	margin-bottom: 40px;
-	-webkit-transform: skewY(4deg);
-	-ms-transform: skewY(4deg);
-	transform: skewY(4deg);
+    margin-bottom: 40px;
+    transform: skewY(4deg);
 }
 
 .ps-item ul li {
-	font-size: 14px;
-	color: #c4c4c4;
-	line-height: 32px;
-	list-style: none;
+    font-size: 14px;
+    color: #c4c4c4;
+    line-height: 32px;
+    list-style: none;
 }
 
 .ps-item .primary-btn.pricing-btn {
-	display: block;
-	background: #333333;
-	-webkit-transform: skewY(4deg);
-	-ms-transform: skewY(4deg);
-	transform: skewY(4deg);
+    display: block;
+    background: #333333;
+    transform: skewY(4deg);
 }
 
 .ps-item .thumb-icon {
-	font-size: 48px;
-	color: #dd2830;
-	position: absolute;
-	left: 50px;
-	bottom: 120px;
-	-webkit-transform: skewY(4deg);
-	-ms-transform: skewY(4deg);
-	transform: skewY(4deg);
-	opacity: 0;
-	visibility: hidden;
+    font-size: 48px;
+    color: #dd2830;
+    position: absolute;
+    left: 50px;
+    bottom: 120px;
+    transform: skewY(4deg);
+    opacity: 0;
+    visibility: hidden;
+}
+
+@media (max-width: 991px) {
+    .ps-item {
+        transform: none;
+    }
+
+    .ps-item h3, .ps-item .pi-price, .ps-item ul, .ps-item .primary-btn.pricing-btn, .ps-item .thumb-icon {
+        transform: none;
+    }
 }
 
 /*---------------------
